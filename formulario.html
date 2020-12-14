@@ -2,38 +2,37 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="formulario.css">
-    <title>Formulário</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <form method=confirmar.html action="GET">
-        <h1>Cadastro</h1>
-        Nome: <input type="text" name="nome" id="nome" size="50px" required placeholder="Nome"> <br>
-        Email: <input type="email" name="email" id="email" size="50px" required placeholder="Email" required> <br>
-        Senha: <input type="password" name="senha" id="senha" size="50px" minlength="8" maxlength="12" required placeholder="Senha" required minlength="8"> <br>
-        Escolha uma foto: <input type="file"> <br>
-        Cor: <input type="radio" name="cor" value="1"> Amarelo
-        <input type="radio" name="cor" value="2"> Branco
-        <input type="radio" name="cor" value="3"> Pardo 
-        <input type="radio" name="cor" value="4"> Negro
-        <input type="radio" name="cor" value="5"> Não quero responder <br>
-        <label for="estado"> Selecione um Estado: </label>
+    <form method="confirmar.html" action="get">
+        <h1>Cadastro</h1>      
+        Nome: <input type="text" name="nome" id="nome" size="50px" required placeholder="Nome"><br>
+        Email: <input type="email" name="email" id="email" size="50px" required placeholder="Email" required><br>
+        Senha: <input type="password" name="senha" id="senha" size="50px" minlength="8" maxlength="12" required placeholder="Senha" required minlength="8"><br>
+        Escolha uma foto: <input type="file"><br>
+        Cor: <input type="radio" name="cor" value="1">Amarelo
+        <input type="radio" name="cor" value="2">Branco
+        <input type="radio" name="cor" value="3">Pardo 
+        <input type="radio" name="cor" value="4">Negro
+        <input type="radio" name="cor" value="5">Não quero responder<br>
+        <label for="estado">Selecione um Estado: </label>
         <select id="estado" name="estado">
-            <option value="al"> Alagoas </option>
-            <option value="ba"> Bahia </option>
-            <option value="ce"> Ceará </option>
-            <option value="ma"> Maranhão </option>
-            <option value="pb"> Paraíba </option>
-            <option value="pe"> Pernambuco </option>
-            <option value="pi"> Piauí </option>
-            <option value="rn"> Rio Grande Do Norte </option>
-            <option value="se"> Sergipe </option>
+            <option value="al">Alagoas</option>
+            <option value="ba">Bahia</option>
+            <option value="ce">Ceará</option>
+            <option value="ma">Maranhão</option>
+            <option value="pb">Paraíba</option>
+            <option value="pe">Pernambuco</option>
+            <option value="pi">Piauí</option>
+            <option value="rn">Rio Grande Do Norte</option>
+            <option value="se">Sergipe</option>
         </select><br>
-       Escolha um ou mais meios de comunicação: <input type="checkbox" name="comunicacao" value="1"> Música 
-       <input type="checkbox" name="comunicacao" value="2"> Televisão
-       <input type="checkbox" name="comunicacao" value="3"> Rádio <br>
-       <label for="obs"> Observações: </label>
+       Escolha um ou mais meios de comunicação: <input type="checkbox" name="comunicacao" value="1">Música 
+       <input type="checkbox" name="comunicacao" value="2">Televisão
+       <input type="checkbox" name="comunicacao" value="3">Rádio<br>
+       <label for="obs">Observações: </label>
        <textarea id="obs" name="obs"></textarea><br>
        <input type="submit" class="button" name="enviar">
        <input type="reset" class="button" name="desfazer">
