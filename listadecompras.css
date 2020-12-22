@@ -1,38 +1,56 @@
 body{
-    background-color: lightcoral;
+    background-color:lightgray;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.content {
+.content{
     width: 70vw;
-    margin:0 auto
+    margin:0 auto;
 }
 
-table {
+table{
     text-align: center;
     padding: 5px;
     width: 60vw;
+    font-size:12px;
 }
 
-#add {
-    margin-top: 10px;
+#add{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
     align-self: center;
-    width: 50vw;
     align-items: center;
+    justify-items: left;
+    padding:5px;
+    width: 50vw;
     border: 1px dashed white;
 }
 
+#valor, #soma{
+    color:red;
+}
+
 input {
-    height: 3vh;
-    margin-right: 5px;
+    height:4vh;
+    margin:4px;
+    border:0;
+}
+
+input:active{
+    border:0;
 }
 
 button{
-    border: 0;
-    background: orangered;
-    color: white;
-    width: 10vw;
-    height: 4vh;
-    margin-top: 5px;
+    border:0;
+    background:lightslategray;
+    color:white;
+    width:10vw;
+    height:4vh;
+    margin:5px 0;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.5;
 }

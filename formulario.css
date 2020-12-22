@@ -1,40 +1,43 @@
 h1{
-    text-align: center;
+    text-align:center;
 }
 
 form{
-    max-width: 650px;
-    margin: 0 auto;
-    text-align: justify;
-    padding: 20px;
-    background: lightslategray;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    max-width:650px;
+    margin:0 auto;
+    text-align:justify;
+    padding:20px;
+    background:lightgray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
 }
 
 input, select, textarea, label{
-    text-align: justify;
-    margin-top: 3vh;
+    text-align:justify;
+    margin-top:3vh;
+    border:0;
 }
 
 textarea{
-    height: 10vh;
-    width: 40vh;
-    border: 0;
+    height:20vh;
+    width:30vh;
+    border:0;
 }
 
 #nome, #email, #senha{
-    width: 80vh;
-    height: 4vh;
-    border: 0;
+    width:35vw;
+    height:5vh;
+    border:0;
 }
 
 .button{
-    background: lightsteelblue;
-    border: 0;
-    height: 4vh;
-    cursor: pointer;
-    margin-right: 5px;
+    background:lightslategray;
+    border:0;
+    height:5vh;
+    cursor:pointer;
+    margin-right:5px;
 }
 
+.button:hover{
+    color: white;
+}

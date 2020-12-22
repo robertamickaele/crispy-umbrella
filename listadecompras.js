@@ -4,28 +4,28 @@ var lista = document
 
 function addItem() {
     /** Pegando valores digitados nos inputs */
-    // Valor do Item
+    // Valor do input item
     var item = document
     .querySelector("#new-item")
     .value;
     //console.log(item);
 
-    //Valor do Item
+    // Valor de input valor
     var valor = document
     .querySelector("#value-item")
     .value;
     //console.log(valor);
 
-    /** Criando elemento tr */
+    /** Criando Elemento tr */
     var tr = document
     .createElement("tr");
-    //console.log(element);
+    //console.log(tr);
 
-    /** Criando td ITem */
-    var td = document
+    /** Criando td Item */
+    var tdItem = document
     .createElement("td");
 
-    /** Criando td Valor */
+    /** Criando td Valor(R$) */
     var tdValue = document
     .createElement("td");
     //console.log(tdItem);
@@ -45,7 +45,6 @@ function addItem() {
 
     /** Adicionando tdItem na tr */
     tr.appendChild(tdItem);
-
     /** Adicionando tdValue na tr */
     tr.appendChild(tdValue);
     //console.log(tr);
@@ -53,7 +52,7 @@ function addItem() {
     /** Adicionando tr dentro da lista */
     lista.appendChild(tr);
 
-    /** Adicionando função de somar itens */
+    /** Adicionando função de somar itens*/
     somaLista();
 }
 
@@ -65,19 +64,22 @@ function somaLista() {
 
     var values = [];
     var valorTotal = 0;
+    //console.log(values.length);
 
-    /** Estrutura condicional para verificar e setar valores na array */
+    /** Estrutura condicional para verificar e setar  valores na array*/
     for (let index = 0; index < tdValue.length; index++) {
-        /** Setando texto da td dentro do array values usando como referência o index */
-        values[index] = parseFloat(tdValue[index].textContent);
-        /** Somando valor da variável valorTotal com o valor da td */
-        valorTotal+= parseFloat(values[index]);
+        /** setando texto da td dentro do array values usando como referencia o index*/
+        values[index] =
+        parseFloat(tdValue[index].textContent);
+        /** Somando valor da variável valorTotal com o valor da td*/
+        valorTotal += 
+        parseFloat(values[index]);
     }
-
-    /** Pegando td de valor total */
+    
+    /** Pegando td de valor Total */
     var tdValorTotal = document
-    .querySelector("soma");
+    .querySelector("#soma");
 
-    /** Adicionando some de valores na td */
+    /** Adicionando soma de valores na td*/
     tdValorTotal.textContent = valorTotal;
 }

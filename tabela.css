@@ -1,3 +1,8 @@
+body{
+    background:lightgray;
+    font-family:Arial, Helvetica, sans-serif
+}
+
 section{
     display:flex;
 }
@@ -15,5 +20,6 @@ table, td, th{
 }
 
 table{
-    width:45vw;
+    width:40vw;
+    background:white;
 }
