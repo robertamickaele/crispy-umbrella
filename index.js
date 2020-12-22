@@ -5,10 +5,10 @@ btn.addEventListener("click", function(){
     const ativ = btn.getAttribute("class");
     if (ativ == "active") {
         body.style.background = "#121212"
-        body.style.color = "#eeeeee"
+        body.style.color = "#cccccc"
     }
     else{
-        body.style.background = "#eeeeee"
+        body.style.background = "#cccccc"
         body.style.color = "#121212"
     }
 })
