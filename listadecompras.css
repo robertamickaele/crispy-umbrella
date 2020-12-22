@@ -4,27 +4,27 @@ body{
 }
 
 .content{
-    width: 70vw;
+    width:70vw;
     margin:0 auto;
 }
 
 table{
-    text-align: center;
-    padding: 5px;
-    width: 60vw;
+    text-align:center;
+    padding:5px;
+    width:60vw;
     font-size:12px;
 }
 
 #add{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    align-self: center;
-    align-items: center;
-    justify-items: left;
+    display:flex;
+    flex-direction:column;
+    margin-top:10px;
+    align-self:center;
+    align-items:center;
+    justify-items:left;
     padding:5px;
-    width: 50vw;
-    border: 1px dashed white;
+    width:50vw;
+    border:1px dashed black;
 }
 
 #valor, #soma{
