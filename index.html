@@ -2,51 +2,92 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <title>Roberta</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Roberta Mickaele</title>
 </head>
 <body>
-    <h1>Roberta</h1>
-    <h2>roberta.sb@outlook.com</h2>
-    <p>Meu objetivo com este curso é atingir um perfil profissional de alta competência e desenvolver cada vez mais as minhas habilidades.</p>
-    <ul class="lista">
-        <li>Tipografia</li>
-        <li>Heurísticas de Nielsen</li>
-        <li>Elementos e Princípios do Design</li>
-        <li>Metodologia do Design</li>
-        <li>Teoria das Cores</li>
-        <li>Wireframe</li>
-        <li>Figma</li>
-        <li>HTML5 e CSS</li>
-    </ul>
-    <h2>Contato</h2>
-    <section>
-        <div class="contato">
-            <a href="github.com">Github</a>
+    <header>
+        <img class="avatar" src="https://avatars2.githubusercontent.com/u/75758914?s=460&v=4" alt="Roberta">
+        <h1 class="title">Roberta Mickaele</h1>
+        <h2 class="subtitle">Web Developer</h2>
+        <ul class="contato">
+            <li>
+                <a href="https://github.com/robertamickaele" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github">
+                        Github
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin">
+                        LinkedIn
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:roberta.sb@outlook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope">
+                        Email
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <a href="#sobre" id="down">
+            <i class="fa fa-chevron-down"></i>
+        </a>
+    </header>
+    <section id="sobre">
+        <div id="about-me">
+            <h1>Sobre Mim</h1>
+            <p>Meu objetivo com este curso é atingir um perfil profissional de alta competência e desenvolver cada vez mais as minhas habilidades.</p>
         </div>
-        <div class="contato">
-            <a href="linkedin.com">LinkedIn</a>
-        </div>
-        <div class="contato">
-            <a href="outlook.com">Email</a>
-        </div>
+        <ul id="lista">
+            <li>Conceitos Básicos da Tipografia</li>
+            <li>Heurísticas de Nielsen</li>
+            <li>Elementos e Princípios do Design</li>
+            <li>Metodologia do Design;</li>
+            <li>Teoria das Cores</li>
+            <li>Wireframe</li>
+            <li>Figma</li>
+            <li>Linguagens: HTML5, CSS3 e Javascript</li>
+        </ul>
     </section>
-    <nav>
+    <section id="atividades">
         <h2>Atividades</h2>
         <ul class="lista">
             <li>
-                <a href="tabela.html" target="_blank">Tabela</a>
+                <a href="tabela.html" target="_blank" rel="noopener noreferrer">
+                    Tabela
+                </a>
             </li>
             <li>
-                <a href="formulario.html" target="_blank">Formulário</a>
+                <a href="formulario.html" target="_blank" rel="noopener noreferrer">
+                    Formulário
+                </a>
             </li>
             <li>
-                <a href="album2.html" target="_blank">Álbum</a>
+                <a href="album.html" target="_blank" rel="noopener noreferrer">
+                    Álbum
+                </a>
             </li>
             <li>
-                <a href="todo.html" target="_blank">Todo List</a>
+                <a href="todo.html" target="_blank" rel="noopener noreferrer">
+                    Todo List
+                </a>
             </li>
         </ul>
-    </nav>
+    </section>
+    <footer>
+        <p>
+            Desenvolvido por
+            <a href="https://github.com/robertamickaele">
+                Roberta
+            </a>
+        </p>
+    </footer>
+    <button id="btn">Trocar tema</button>
+    <script src="index.js"></script>
 </body>
 </html>

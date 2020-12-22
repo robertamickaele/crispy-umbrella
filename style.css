@@ -1,36 +1,158 @@
 body{
-  background:lightgray;
-  text-align:center;
-  color:black;
-  }
-  
-h1, h2{
-  font-family:Arial, Helvetica, sans-serif;
-  text-align:center;
-  }
-  
-p{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:20px;
-  }
+  background: #cccccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  header{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 a{
-  text-decoration:none;
+  text-decoration: none;
 }
 
-section{
-  background:gray;
-  display:flex;
-  align-items:center;
-  padding:10px;
-  border:1px solid black;
+.avatar{
+  width: 10vw;
+  border-radius: 100px;
 }
 
-.lista{
-  list-style:none;
-  text-align:center;
+.title{
+  font-size: 30px;
+  margin: 10px 0;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.subtitle{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 
 .contato{
-  width: 30vw;
+  padding: 0;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.contato li{
+  margin: 0 10px;
+  display: inline-block;
+}
+
+i{
+  color: rgb(172, 69, 216);
+  font-size: 15px;
+}
+
+.contato i:hover{
+  color:  rgb(236, 152, 236);
+}
+
+#down{
+  color: rgb(172, 69, 216);
+  font:15px;
+}
+
+#down:hover{
+  color:  rgb(236, 152, 236);
+}
+
+#sobre{
+  height:50vh;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid rgb(172, 69, 216);
+  font-size: 15px;
+}
+
+#sobre p{
+  width: 70vw;
+  margin-left: 50px;
+}
+
+#about-me{
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me h2{
+  margin-left: 5vw;
+}
+
+#lista{
+  width: 20vw;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+#lista li{
+  font-weight: 700;
+  padding: 10px 0;
+  list-style: none;
+  cursor: default;
+}
+
+#lista li:hover{
+  background-color: rgb(236, 152, 236);
+  border-radius: 15px;
+}
+
+#atividades{
+  height: 50vh;
+  text-align: center;
+  border-top: 2px solid rgb(172, 69, 216);
+}
+
+#atividades li{
+  list-style: none;
+  padding: 5px;
+}
+
+#atividades a{
+  text-decoration:none;
+  color:rgb(172, 69, 216);
+  font-size: 15px;
+}
+
+#atividades a:hover{
+  color: rgb(236, 152, 236);
+  text-decoration: underline;
+}
+
+footer{
+  background-color: #444;
+  height:10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -8px
+}
+
+footer a:hover{
+  color: rgb(236, 152, 236);
+}
+
+@keyframes slidein{
+  from{
+    margin-top: 50vh;
+    width:100vw;
+  }
+  to{
+    margin-left: 0;
+  }
+}
+
+#btn{
+  position: fixed;
+  right: 1vw;
+  top: 1vw;
 }
